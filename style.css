@@ -1,0 +1,95 @@
+*
+{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Poppins', sans-serif;    
+}
+body
+{
+    background: lightblue;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.container
+{
+position: relative;
+width: 100%;
+max-width: 1900px;
+min-height: 810px;
+background: #020202;
+margin: 0px;
+display:grid;
+grid-template-columns: 1fr 2fr;
+
+}
+.container .gauche
+{
+margin: 0;
+position: relative;
+background: #868787;
+padding: 0px;
+height: 100%;
+}
+.Text
+{
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 60px;
+
+}
+.container .droite
+{
+margin: 0;
+position: relative;
+background: #070707;
+padding: 0px;
+height: 100%;
+color:white;
+
+}
+img {
+    border-radius:50%;
+    margin: 15px auto;
+}
+.container h2{
+    margin-bottom: 20px;
+    margin: 15px;
+    font-size: 25px;
+}
+.container h1{
+    margin: 15px;
+    font-size: 25px;
+}
+.container h3{
+    margin: 15px;
+    font-size: 25px;
+}
+
+@media screen and (max-width: 540px) {
+    .container {
+        grid-template-columns: repeat(1,1fr
+        );
+    }
+    .Text{
+        background-color: black;
+    
+    }
+    .droite{
+   background-color: #868787;
+    }
+    .adresse{
+        color: white;
+    }
+    .Nom{
+        color: white;
+    }
+    .Test{
+        color: #020202;
+    }
+}
